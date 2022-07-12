@@ -1,6 +1,6 @@
 package converter;
 
-import romans.representation.RomansNumbers;
+import romans.RomansNumbers;
 
 public class ConvertToArabic {
     public static int getArabic(String romanNumber) {

@@ -1,6 +1,6 @@
 package converter;
 
-import romans.representation.RomansNumbers;
+import romans.RomansNumbers;
 
 public class ConvertToRoman {
     private static final RomansNumbers[] ROMANS_VALUES = RomansNumbers.values();
