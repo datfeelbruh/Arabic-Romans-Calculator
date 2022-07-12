@@ -1,0 +1,36 @@
+plugins {
+    id 'se.patrikerdes.use-latest-versions' version '0.2.18'
+    id 'com.github.ben-manes.versions' version '0.42.0'
+    id 'application'
+    id 'java'
+    id 'checkstyle'
+}
+
+group 'khoroshko.d'
+version '1.0-SNAPSHOT'
+
+
+application {
+    mainClass = 'hexlet.code.App'
+}
+
+compileJava {
+    options.release = 17
+}
+
+run {
+    standardInput = System.in
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
