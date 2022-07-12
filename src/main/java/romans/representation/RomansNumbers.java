@@ -1,4 +1,4 @@
-package RomansRepresentation;
+package romans.representation;
 
 public enum RomansNumbers {
     I(1),
@@ -15,10 +15,14 @@ public enum RomansNumbers {
     CM(900),
     M(1000);
 
-    final int weight;
+    private final int weight;
 
     RomansNumbers(int weight) {
         this.weight = weight;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
 }
